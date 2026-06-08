@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "azumaya",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/tmp/azumaya_preview/serve.py"],
+      "port": 8123
+    }
+  ]
+}
