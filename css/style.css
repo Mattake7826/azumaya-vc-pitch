@@ -415,7 +415,7 @@ h1, h2, h3, h4 {
 .hero__title-line {
   display: block;
   white-space: nowrap;
-  font-size: clamp(1.25rem, 6.2vw, 3.2rem);
+  font-size: clamp(1.25rem, 6.2vw, 2.8rem);
 }
 
 .hero__sub {
