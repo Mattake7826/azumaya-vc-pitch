@@ -415,7 +415,15 @@ h1, h2, h3, h4 {
 .hero__title-line {
   display: inline-block;
   white-space: nowrap;
-  font-size: clamp(1.25rem, 6.2vw, 2.8rem);
+  font-size: clamp(1.25rem, 6.2vw, 2.5rem);
+}
+
+/* English title lines are longer: use a slightly smaller cap so the second line
+   fits comfortably on one row at PC widths, and allow wrapping on small screens to
+   avoid horizontal overflow (the <br> still fixes the two-line break). */
+[lang="en"] .hero__title-line {
+  white-space: normal;
+  font-size: clamp(1.1rem, 5vw, 2.2rem);
 }
 
 .hero__sub {
