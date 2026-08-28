@@ -452,12 +452,8 @@ h1, h2, h3, h4 {
 }
 
 /* =========================================================
-   Concept
+   Cards (reused by Use Case moment cards)
    ========================================================= */
-.concept {
-  background-color: var(--color-bg);
-}
-
 .cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -505,60 +501,6 @@ h1, h2, h3, h4 {
 .card__text {
   color: var(--color-text-muted);
   font-size: 0.95rem;
-}
-
-/* =========================================================
-   Why 20 (Science)
-   ========================================================= */
-.science {
-  background-color: var(--color-navy);
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-}
-
-.science__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  align-items: center;
-}
-
-.science__number {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: clamp(8rem, 40vw, 18rem);
-  line-height: 0.9;
-  color: var(--color-gold);
-  letter-spacing: -0.02em;
-  position: relative;
-  text-align: center;
-}
-
-.science__number small {
-  font-size: 0.18em;
-  letter-spacing: 0.1em;
-  display: block;
-  color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
-  margin-top: 0.4em;
-  font-family: var(--font-body);
-  font-weight: 700;
-}
-
-.science__title {
-  font-size: clamp(1.6rem, 5vw, 2.4rem);
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.science__text {
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 1.02rem;
-}
-
-.science .eyebrow {
-  color: var(--color-gold);
 }
 
 /* =========================================================
@@ -722,76 +664,289 @@ h1, h2, h3, h4 {
 }
 
 /* =========================================================
-   Testimonials
+   Problem
    ========================================================= */
-.testimonials {
+.problem {
   background-color: var(--color-bg);
 }
 
-.testimonials__grid {
+.problem__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.problem__title {
+  font-size: clamp(1.5rem, 4.6vw, 2.3rem);
+  color: var(--color-navy);
+  margin-bottom: 24px;
+}
+
+.problem__lead {
+  color: var(--color-text-muted);
+  font-size: 1.02rem;
+}
+
+.u-nowrap-break {
+  display: none;
+}
+
+/* =========================================================
+   Azumaya Experience
+   ========================================================= */
+.experience {
+  background-color: var(--color-surface);
+}
+
+.experience__grid {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.experience__illustration {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(184, 149, 42, 0.08), rgba(13, 27, 42, 0.06));
+  border: 1px solid var(--color-border);
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience__illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Fallback shown while the illustration asset is not yet in place */
+.experience__illustration.is-placeholder {
+  color: var(--color-text-muted);
+}
+
+.experience__illustration.is-placeholder img {
+  display: none;
+}
+
+.experience__illustration.is-placeholder::after {
+  content: 'Experience illustration';
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.experience__title {
+  font-size: clamp(1.7rem, 5vw, 2.4rem);
+  color: var(--color-navy);
+  margin-bottom: 20px;
+}
+
+.experience__text {
+  color: var(--color-text-muted);
+  font-size: 1.02rem;
+  max-width: 480px;
+}
+
+/* =========================================================
+   The Product
+   ========================================================= */
+.product {
+  background-color: var(--color-bg);
+}
+
+.product__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
+  margin-top: 48px;
+}
+
+.product__media {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.product__media img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.product__caption {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin-top: 10px;
+}
+
+.product__media .product__caption {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+  margin-top: 0;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background-color: rgba(13, 27, 42, 0.72);
+  color: #fff;
+}
+
+.product__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.product__list h3 {
+  font-size: 1.08rem;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.product__list p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.product__blueprint {
+  margin-top: 40px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.product__blueprint img {
+  width: 100%;
+  height: auto;
+}
+
+.product__blueprint .product__caption {
+  text-align: center;
+  padding: 14px 0;
+  background-color: var(--color-navy);
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* =========================================================
+   How It Works
+   ========================================================= */
+.how-it-works {
+  background-color: var(--color-surface);
+}
+
+.flow {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   margin-top: 48px;
 }
 
-.testimonial {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: 32px 28px;
-  box-shadow: var(--shadow);
+.flow__step {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 220px;
 }
 
-.testimonial__quote {
-  font-size: 1rem;
-  color: var(--color-text);
-  margin-bottom: 24px;
-  flex-grow: 1;
-  position: relative;
-  padding-top: 28px;
+.flow__icon {
+  width: 140px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
 }
 
-.testimonial__quote::before {
-  content: '\201C';
-  position: absolute;
-  top: -10px;
-  left: -4px;
-  font-family: var(--font-heading);
-  font-size: 3.5rem;
-  color: rgba(184, 149, 42, 0.3);
-  line-height: 1;
+.flow__icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
-.testimonial__meta {
-  border-top: 1px solid var(--color-border);
-  padding-top: 18px;
-}
-
-.testimonial__company {
+.flow__label {
   font-weight: 700;
   color: var(--color-navy);
-  font-size: 1rem;
-  margin-bottom: 4px;
+  font-size: 0.98rem;
 }
 
-.testimonial__person {
+.flow__arrow {
+  color: var(--color-gold);
+  transform: rotate(90deg);
+}
+
+.flow__arrow svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* =========================================================
+   Use Case (extends .cards / .locations__tags / .locations__grid)
+   ========================================================= */
+.usecase {
+  background-color: var(--color-bg);
+}
+
+.usecase__locations {
+  margin-top: 72px;
+  padding-top: 56px;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.usecase__locations-label {
   color: var(--color-text-muted);
   font-size: 0.88rem;
-  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
 }
 
-.testimonial__tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  letter-spacing: 0.05em;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background-color: rgba(13, 27, 42, 0.06);
-  color: var(--color-navy);
-  font-weight: 700;
+.usecase .locations__tags {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+/* =========================================================
+   Vision
+   ========================================================= */
+.vision {
+  background-color: var(--color-navy);
+  color: #fff;
+}
+
+.vision__inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vision .eyebrow {
+  color: var(--color-gold);
+}
+
+.vision__title {
+  font-size: clamp(1.9rem, 6vw, 3rem);
+  color: #fff;
+  margin-bottom: 26px;
+}
+
+.vision__text {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.02rem;
 }
 
 /* =========================================================
@@ -968,15 +1123,33 @@ h1, h2, h3, h4 {
 
   .cards { grid-template-columns: repeat(2, 1fr); gap: 24px; }
 
-  .science__grid {
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 48px;
-  }
-  .science__number { text-align: left; }
-
   .locations__grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
 
-  .testimonials__grid { grid-template-columns: repeat(3, 1fr); }
+  .u-nowrap-break { display: inline; }
+
+  .experience__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+
+  .product__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+  }
+
+  .flow {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .flow__step { max-width: 180px; }
+
+  .flow__arrow {
+    transform: none;
+    margin-top: 50px;
+  }
 
   .footer__inner {
     flex-direction: row;
