@@ -29,9 +29,9 @@
       </a>
 
       <nav class="nav__menu" aria-label="メインメニュー">
-        <a href="#concept">Concept</a>
-        <a href="#why">Why 20min</a>
-        <a href="#locations">Locations</a>
+        <a href="#experience">Experience</a>
+        <a href="#product">Product</a>
+        <a href="#usecase">Use Case</a>
         <a href="#cta">Contact</a>
       </nav>
 
@@ -50,15 +50,15 @@
   <!-- Mobile drawer -->
   <div class="nav__drawer" id="navDrawer">
     <ul>
-      <li><a href="#concept">Concept</a></li>
-      <li><a href="#why">Why 20min</a></li>
-      <li><a href="#locations">Locations</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#usecase">Use Case</a></li>
       <li><a href="#cta">Contact</a></li>
     </ul>
   </div>
 
   <!-- ================= Hero ================= -->
-  <section class="hero" id="hero" style="--hero-img: url('../images/blueprint.avif');">
+  <section class="hero" id="hero" style="--hero-img: url('../images/insideview.avif');">
     <div class="hero__bg"></div>
     <div class="container">
       <div class="hero__inner">
@@ -70,151 +70,215 @@
     <span class="scroll-hint">Scroll</span>
   </section>
 
-  <!-- ================= Concept ================= -->
-  <section class="section concept" id="concept">
+  <!-- ================= Problem ================= -->
+  <section class="section problem" id="problem">
     <div class="container">
-      <div class="text-center reveal">
-        <span class="eyebrow">Concept</span>
-        <h2 class="section__title">回復が、パフォーマンスを決める</h2>
-        <p class="section__lead">休むことは、止まることではない。再び高く動き出すための、設計された時間です。</p>
-      </div>
-
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg>
-          </div>
-          <h3 class="card__title">静けさは、形から生まれる</h3>
-          <p class="card__text">外界の音と視線を遮断する構造。空間そのものが、静寂をデザインします。</p>
-        </article>
-
-        <article class="card reveal reveal--delay-1">
-          <div class="card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h3 class="card__title">包まれると、思考は軽くなる</h3>
-          <p class="card__text">やわらかな曲面に包み込まれる感覚。緊張がほどけ、頭の中が整理されていきます。</p>
-        </article>
-
-        <article class="card reveal reveal--delay-2">
-          <div class="card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
-          </div>
-          <h3 class="card__title">再び動き出すために設計された空間</h3>
-          <p class="card__text">休息の先にある「再起動」を見据えた設計。回復は、次の一歩のための準備です。</p>
-        </article>
-
-        <article class="card reveal reveal--delay-3">
-          <div class="card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
-          </div>
-          <h3 class="card__title">集中の質が変わる</h3>
-          <p class="card__text">短い回復が、その後の集中の深さを変える。一日のパフォーマンスを底上げします。</p>
-        </article>
+      <div class="problem__inner reveal">
+        <span class="eyebrow">Problem</span>
+        <h2 class="problem__title">働く場所はある。<br />しかし、回復する場所がない。</h2>
+        <p class="problem__lead">
+          会議室も、集中スペースも、増え続けている。<br class="u-nowrap-break" />
+          けれど、短い時間だけ一人になり、外部の刺激から離れて、<br class="u-nowrap-break" />
+          意図的に心と頭を整える場所は、まだほとんどない。
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- ================= Why 20 min (Science) ================= -->
-  <section class="section science" id="why">
+  <!-- ================= Azumaya Experience ================= -->
+  <section class="section experience" id="experience">
     <div class="container">
-      <div class="science__grid">
-        <div class="science__number reveal" aria-hidden="true">
-          20<small>minutes</small>
+      <div class="experience__grid">
+        <div class="experience__visual reveal">
+          <div class="experience__illustration">
+            <img src="images/experience-illustration.png" alt="Azumayaの中で心と脳が整う体験のイメージイラスト" loading="lazy" onerror="this.closest('.experience__illustration').classList.add('is-placeholder')" />
+          </div>
         </div>
-        <div class="science__body reveal reveal--delay-1">
-          <span class="eyebrow">Why 20 minutes</span>
-          <h2 class="science__title">なぜ、20分なのか。</h2>
-          <p class="science__text">
-            深い睡眠に入ってしまうと、目覚めたあとに重さが残ります。20分という時間は、深い眠りに落ちる手前で脳を休ませ、認知機能を回復させる最適なリズム。
-            浅い回復のなかで思考はリセットされ、すっきりとした状態で再び動き出すことができます。
+        <div class="experience__body reveal reveal--delay-1">
+          <span class="eyebrow">Azumaya Experience</span>
+          <h2 class="experience__title">20分間、<br />外界から離れる。</h2>
+          <p class="experience__text">
+            Azumayaは、外界の音や視線から一時的に離れ、
+            自分だけの空間で心と脳を整えるための
+            パーソナル・リカバリー空間です。
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= Locations ================= -->
-  <section class="section locations" id="locations">
+  <!-- ================= The Product ================= -->
+  <section class="section product" id="product">
     <div class="container">
       <div class="text-center reveal">
-        <span class="eyebrow">Locations</span>
-        <h2 class="section__title">回復を、あらゆる場所へ。</h2>
-        <p class="section__lead">人が集まり、働き、移動する場所に。リカバリーポッドは、空間に自然と溶け込みます。</p>
+        <span class="eyebrow">The Product</span>
+        <h2 class="section__title">これが、Azumaya。</h2>
+        <p class="section__lead">軽量性を追求した網状構造が、人を包み込むパーソナル空間をつくる。</p>
       </div>
 
-      <div class="locations__tags reveal">
-        <button type="button" class="locations__tag" data-img="images/usecase-office.avif" data-caption="オフィス">
-          オフィス
-          <svg class="locations__tag-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </button>
-        <button type="button" class="locations__tag" data-img="images/usecase-aireport2.avif" data-caption="空港">
-          空港
-          <svg class="locations__tag-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </button>
-        <button type="button" class="locations__tag" data-img="images/library.avif" data-caption="大学">
-          大学
-          <svg class="locations__tag-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </button>
-        <button type="button" class="locations__tag" data-img="images/insideview.avif" data-caption="公共空間">
-          公共空間
-          <svg class="locations__tag-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </button>
-      </div>
-
-      <div class="locations__grid">
-        <div class="locations__img reveal">
-          <img src="images/Gemini_Generated_Image.png" alt="オフィス環境に設置されたリカバリーポッド" loading="lazy" />
+      <div class="product__grid">
+        <div class="product__media reveal">
+          <img src="images/3D-printing.avif" alt="積層造形で製作されたAzumayaのスケールプロトタイプ" loading="lazy" />
+          <span class="product__caption">スケールプロトタイプ（積層造形）</span>
         </div>
-        <div class="locations__img reveal reveal--delay-1">
-          <img src="images/usecase-aireport.avif" alt="空港に設置されたリカバリーポッド" loading="lazy" />
+        <div class="product__points reveal reveal--delay-1">
+          <ul class="product__list">
+            <li>
+              <h3>軽量性を重視した構造</h3>
+              <p>面ではなく線でかたちをつくる網状フレームが、パネルを減らしながら十分な強度を確保します。</p>
+            </li>
+            <li>
+              <h3>包み込むパーソナル空間</h3>
+              <p>卵形のフレームが体をやわらかく囲み、外からの視線を感じにくい一人の空間をつくります。</p>
+            </li>
+            <li>
+              <h3>外界から一時的に距離を取る設計</h3>
+              <p>音や光を穏やかに和らげる構造で、周囲の情報量を一時的に減らします。</p>
+            </li>
+            <li>
+              <h3>短時間利用を想定したリカバリー空間</h3>
+              <p>長時間の滞在ではなく、20分という短い切り替えのために設計されています。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product__blueprint reveal reveal--delay-2">
+        <img src="images/blueprint.avif" alt="Azumaya技術図面（網状フレーム構造）" loading="lazy" />
+        <span class="product__caption">技術図面 — 網状フレーム構造</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= How It Works ================= -->
+  <section class="section how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2 class="section__title">回復のプロセス</h2>
+      </div>
+
+      <ol class="flow">
+        <li class="flow__step reveal">
+          <span class="flow__icon"><img src="images/flow-01-fatigue.png" alt="" loading="lazy" /></span>
+          <p class="flow__label">疲労・情報過多</p>
+        </li>
+        <li class="flow__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </li>
+        <li class="flow__step reveal reveal--delay-1">
+          <span class="flow__icon"><img src="images/flow-02-enter.png" alt="" loading="lazy" /></span>
+          <p class="flow__label">Azumayaに入る</p>
+        </li>
+        <li class="flow__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </li>
+        <li class="flow__step reveal reveal--delay-2">
+          <span class="flow__icon"><img src="images/flow-03-clear.png" alt="" loading="lazy" /></span>
+          <p class="flow__label">20分間、整える</p>
+        </li>
+        <li class="flow__arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </li>
+        <li class="flow__step reveal reveal--delay-3">
+          <span class="flow__icon"><img src="images/flow-04-move.png" alt="" loading="lazy" /></span>
+          <p class="flow__label">再び動き出す</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= Use Case ================= -->
+  <section class="section usecase" id="usecase">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="eyebrow">Use Case</span>
+        <h2 class="section__title">こんな時間に、20分。</h2>
+        <p class="section__lead">日常の活動の中で、Azumayaに入る。それだけで、次に向かう準備が整います。</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+          </div>
+          <h3 class="card__title">会議と会議の間</h3>
+          <p class="card__text">次の議題に入る前に、頭を切り替える20分。</p>
+        </article>
+        <article class="card reveal reveal--delay-1">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3 class="card__title">午後の集中力が落ちた時</h3>
+          <p class="card__text">午後の停滞を、短い回復でリセットする。</p>
+        </article>
+        <article class="card reveal reveal--delay-2">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 11-14h-8z"/></svg>
+          </div>
+          <h3 class="card__title">高負荷な業務の後</h3>
+          <p class="card__text">神経を使う作業のあと、一度、外界から離れる。</p>
+        </article>
+        <article class="card reveal reveal--delay-3">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="card__title">重要な仕事や集中する前</h3>
+          <p class="card__text">大事な仕事の前に、思考を整えてから臨む。</p>
+        </article>
+      </div>
+
+      <div class="usecase__locations reveal">
+        <p class="usecase__locations-label">将来的には、こうした場所にも。</p>
+
+        <div class="locations__tags">
+          <button type="button" class="locations__tag" data-img="images/usecase-office.avif" data-caption="オフィス">
+            オフィス
+            <svg class="locations__tag-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <button type="button" class="locations__tag" data-img="images/usecase-aireport2.avif" data-caption="空港">
+            空港
+            <svg class="locations__tag-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <button type="button" class="locations__tag" data-img="images/library.avif" data-caption="大学">
+            大学
+            <svg class="locations__tag-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <button type="button" class="locations__tag" data-img="images/Gemini_Generated_Image.png" data-caption="公共空間">
+            公共空間
+            <svg class="locations__tag-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+
+        <div class="locations__grid">
+          <div class="locations__img reveal">
+            <img src="images/usecase-office.avif" alt="オフィス環境に設置されたAzumaya" loading="lazy" />
+          </div>
+          <div class="locations__img reveal reveal--delay-1">
+            <img src="images/usecase-aireport.avif" alt="空港に設置されたAzumaya" loading="lazy" />
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= Testimonials ================= -->
-  <section class="section testimonials" id="testimonials">
+  <!-- ================= Vision ================= -->
+  <section class="section vision" id="vision">
     <div class="container">
-      <div class="text-center reveal">
-        <span class="eyebrow">Testimonials</span>
-        <h2 class="section__title">導入企業の声</h2>
-        <p class="section__lead">※掲載内容はサンプルです。実際の導入事例に差し替え予定です。</p>
-      </div>
-
-      <div class="testimonials__grid">
-        <article class="testimonial reveal">
-          <p class="testimonial__quote">午後の生産性が目に見えて変わりました。短い休息を「サボり」ではなく文化として根付かせられたことが大きい。</p>
-          <div class="testimonial__meta">
-            <p class="testimonial__company">株式会社サンプルA</p>
-            <p class="testimonial__person">人事部 ／ 田中 様</p>
-            <span class="testimonial__tag">IT・ソフトウェア</span>
-          </div>
-        </article>
-
-        <article class="testimonial reveal reveal--delay-1">
-          <p class="testimonial__quote">来訪者にも好評で、ウェルビーイングへの本気度を示すシンボルになっています。導入のハードルも想像より低かったです。</p>
-          <div class="testimonial__meta">
-            <p class="testimonial__company">サンプル大学</p>
-            <p class="testimonial__person">施設管理課 ／ 佐藤 様</p>
-            <span class="testimonial__tag">教育・研究</span>
-          </div>
-        </article>
-
-        <article class="testimonial reveal reveal--delay-2">
-          <p class="testimonial__quote">長距離移動の合間に20分。乗客満足度の調査スコアが向上し、ラウンジの新しい価値になりました。</p>
-          <div class="testimonial__meta">
-            <p class="testimonial__company">サンプル空港運営</p>
-            <p class="testimonial__person">サービス企画 ／ 鈴木 様</p>
-            <span class="testimonial__tag">交通・インフラ</span>
-          </div>
-        </article>
+      <div class="vision__inner reveal">
+        <span class="eyebrow">Vision</span>
+        <h2 class="vision__title">回復は、インフラになる。</h2>
+        <p class="vision__text">
+          Azumayaが目指すのは、ポッドを売ることではありません。<br />
+          働く場所に、学ぶ場所に、移動する場所に。<br />
+          「回復するための空間」という、新しいインフラをつくることです。
+        </p>
       </div>
     </div>
   </section>
 
   <!-- ================= CTA ================= -->
-  <section class="section cta" id="cta" style="--cta-img: url('../images/3D-printing.avif');">
+  <section class="section cta" id="cta" style="--cta-img: url('../images/pod-aireport.avif');">
     <div class="container">
       <div class="reveal">
         <h2 class="cta__title">ご相談・お問い合わせ</h2>
